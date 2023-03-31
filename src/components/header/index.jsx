@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo-sportsee.svg'
 import '../../utils/style/_header.scss'
+import { userId } from '../../utils/data/config'
 
 function Header() {
   return (
@@ -12,7 +13,7 @@ function Header() {
         <Link to="/" state={{ pageName: 'Accueil' }}>
           Accueil
         </Link>
-        <Link to="/user">Profil</Link>
+        <Link to={{ pathname: '/user/' + userId }}>Profil</Link>
         <Link to="/" state={{ pageName: 'Réglages' }}>
           Réglages
         </Link>
