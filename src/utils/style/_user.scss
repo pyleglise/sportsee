@@ -1,15 +1,177 @@
+@import 'colors';
+@import 'breakpoints';
 .main {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
-.dashboard {
+// .dashboard {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   padding: 2%;
+//   width: calc(100% - 80px);
+//   height: 100%;
+//   box-sizing: border-box;
+// }
+
+// _______________________________
+.content {
+  // height: 100%;
+
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.content-profile {
+  font-size: 32px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px auto;
+  grid-template-areas:
+    '.'
+    '.';
+  gap: 20px 0;
+  @include laptop {
+    margin-bottom: 50px;
+  }
+}
+
+.oups {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  > img {
+    margin-bottom: 20px;
+  }
+}
+.welcome {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 2%;
-  width: calc(100% - 80px);
+  // gap: 5px;
+  // margin-bottom: 5px;
+  @include laptop {
+    // margin-bottom: -80px;
+  }
+
+  > h1 {
+    margin: 0 0;
+    font-size: 48px;
+    > span {
+      color: red;
+    }
+  }
+  > p {
+    font-size: 18px;
+  }
+}
+.dashboard {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 71% 22%;
+  grid-template-rows: fit-content(0%);
+  gap: 0 2%;
+  grid-template-areas: '. .';
+  @include laptop {
+    grid-template-columns: 1fr;
+    grid-template-rows: 17% 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      '.'
+      '.';
+  }
+  @include largeScreens {
+    grid-template-columns: 72% 22%;
+  }
+}
+.charts {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 320px 263px;
+  gap: 20px 0;
+  grid-template-areas:
+    '.'
+    '.';
+  width: 100%;
+  height: fit-content;
+  align-content: top;
+}
+.secondary-charts-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  height: 263px;
+
+  @include desktop {
+    margin-top: 34px;
+  }
+}
+.key-infos-zone {
+  height: 612px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // gap: 3.5%;
+}
+
+.key-info {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 32px;
+    gap: 24px;
+    background-color: $light-grey;
+    width: 100%;
+    border-radius: 5px;
+
+    // padding: 15px 20px;
+    @include largeScreens {
+      min-height: 124px;
+    }
+  }
+  &__value {
+    display: flex;
+    flex-direction: column;
+    > h5 {
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 30px 0 0 0;
+    }
+    > p {
+      font-size: 14px;
+      font-weight: bolder;
+      color: $font-grey;
+      margin: 10px 0 30px 0;
+    }
+  }
+}
+.solo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  margin: auto;
+  .activity-container {
+    width: 75%;
+  }
+  .sessions-container,
+  .perf-container {
+    width: 50%;
+    height: 50%;
+  }
 }

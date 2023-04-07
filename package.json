@@ -1,6 +1,6 @@
 {
   "name": "sportsee",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -16,6 +16,7 @@
     "react-router": "^6.10.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "recharts": "^2.5.0",
     "sass": "^1.59.3",
     "stream-http": "^3.2.0",
     "web-vitals": "^2.1.4"

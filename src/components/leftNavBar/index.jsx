@@ -14,25 +14,25 @@ const LeftNavBar = () => {
       <div className="leftNavBarIconContainer">
         <Link
           to={{ pathname: '/user/' + id }}
-          state={{ pageName: 'Dashboard 1' }}
+          state={{ pageName: 'Main user infos' }}
         >
           <img src={Meditation} alt="Meditation" />
         </Link>
         <Link
           to={{ pathname: '/user/' + id + '/activity' }}
-          state={{ pageName: 'Dashboard 2' }}
+          state={{ pageName: 'Activity' }}
         >
           <img src={Swimmer} alt="Swimmer" />
         </Link>
         <Link
           to={{ pathname: '/user/' + id + '/average-sessions' }}
-          state={{ pageName: 'Dashboard 3' }}
+          state={{ pageName: 'Average sessions' }}
         >
           <img src={Biker} alt="Biker" />
         </Link>
         <Link
           to={{ pathname: '/user/' + id + '/performance' }}
-          state={{ pageName: 'Dashboard 4' }}
+          state={{ pageName: 'Performance' }}
         >
           <img src={Weight} alt="Weight" />
         </Link>

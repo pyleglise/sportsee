@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo-sportsee.svg'
 import '../../utils/style/_header.scss'
-import { userId } from '../../utils/data/config'
+import { userId } from '../../utils/data/config' // ============== Remove for real user
 
 function Header() {
   return (

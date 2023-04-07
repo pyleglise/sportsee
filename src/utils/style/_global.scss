@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap');
 @import 'colors';
+@import 'breakpoints';
 
 body {
   margin: 0;
@@ -9,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-width: 1024px;
   min-height: 780px;
+  // max-width: 1440px;
 }
 
 .temp-div {

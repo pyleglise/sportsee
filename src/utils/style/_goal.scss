@@ -1,0 +1,65 @@
+@import 'colors';
+.goal-container {
+  position: relative;
+  background: $light-grey;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+  height: 263px;
+  width: 258px;
+  > h3 {
+    padding: 0;
+    margin: 24px 0 0 30px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: $dark-title;
+  }
+  .recharts-responsive-container {
+    position: absolute;
+    top: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .recharts-wrapper {
+    .recharts-legend-wrapper {
+      text-align: center;
+      // height: 200px;
+      // width: 200px;
+
+      .score-container {
+        // position: absolute;
+        // top: 50% !important;
+        // left: 50% !important;
+        // transform: translate(-50%, -50%);
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background: $white;
+        border-radius: 100px;
+        span.score {
+          font-size: 26px;
+          font-weight: 900;
+        }
+        div {
+          display: flex;
+          justify-content: center;
+          > .description {
+            font-size: 16px;
+            font-weight: bolder;
+            text-align: center;
+            color: rgba(116, 121, 140, 1);
+            margin: 0;
+            padding-left: 10%;
+            padding-right: 10%;
+            line-height: 26px;
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
