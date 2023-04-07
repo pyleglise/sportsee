@@ -1,0 +1,49 @@
+@import 'colors';
+@import 'breakpoints';
+
+.sessions-container {
+  position: relative;
+  background-color: red;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+  height: 263px;
+  width: 258px;
+}
+.week-end {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bg-we {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 28%;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.special-legend--sessions {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 70%;
+  color: white;
+  opacity: 0.4;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.special-tooltip--sessions {
+  background-color: $white;
+  color: $black;
+  font-size: 8px;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+  width: 35px;
+  height: 25px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 25px;
+}

@@ -6,13 +6,14 @@
   align-items: center;
   min-height: calc(100vh - 351.8px);
   .error-num {
-    font-size: 288px;
+    font-size: 100px;
     font-weight: 700;
     margin-top: 45px;
     margin-bottom: 10px;
   }
 
   .error-txt {
+    text-align: center;
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 75px;
