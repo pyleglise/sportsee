@@ -1,3 +1,10 @@
+/**
+ * Module needed to mocked api data
+ * @module Data
+ */
+/**
+ * Users main data
+ */
 const USER_MAIN_DATA = [
   {
     id: 12,
@@ -30,7 +37,9 @@ const USER_MAIN_DATA = [
     },
   },
 ]
-
+/**
+ * Users activity
+ */
 const USER_ACTIVITY = [
   {
     userId: 12,
@@ -113,7 +122,9 @@ const USER_ACTIVITY = [
     ],
   },
 ]
-
+/**
+ * Users sessions
+ */
 const USER_AVERAGE_SESSIONS = [
   {
     userId: 12,
@@ -182,7 +193,9 @@ const USER_AVERAGE_SESSIONS = [
     ],
   },
 ]
-
+/**
+ * Users performance
+ */
 const USER_PERFORMANCE = [
   {
     userId: 12,

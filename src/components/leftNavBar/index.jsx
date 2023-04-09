@@ -6,6 +6,19 @@ import Swimmer from '../../assets/swimMan.svg'
 import Biker from '../../assets/bikeMan.svg'
 import Weight from '../../assets/weight.svg'
 
+/**
+ * Component that displays the navigation bar on the left\
+ * No props
+ *
+ * @namespace
+ * @component
+ * @author  Pierre-Yves Léglise <pleglise@pm.me>
+ * @example
+ * return (
+ *   <LeftNavBar />
+ * )
+ * @returns {JSX.Element}   A JSX.Element that contains the navigation bar. Supposed to be called on the left of the screen.
+ */
 const LeftNavBar = () => {
   const { id } = useParams()
   // console.log('id=' + id)

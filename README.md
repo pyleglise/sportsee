@@ -1,70 +1,123 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SportSee
 
-## Available Scripts
+## OpenClassrooms Project 12
 
-In the project directory, you can run:
+| Project | 12                                                   |
+|---------|------------------------------------------------------|
+| Name    | Développez un tableau de bord d'analytics avec React |
+| Student | Pierre-Yves Léglise                                  |
+| Version | 1.0.0                                                |
+| Release date| 2023/04/10																			|
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Aperçu](https://www.axialdata.net/oc/p12-snapshot.jpg)
+# Introduction
+  SportSee is a website application that intend to give you access to various information regarding your health condition and sport activity.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It has been developped using React and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Therefore, it has some prerequisites.
 
-### `npm test`
+# Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   NodeJS version 12.18
+-   Yarn version 1.22.19 or npm version 8.15.0
+  
 
-### `npm run build`
+# Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   [React](https://reactjs.org/)
+-   [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+-   [recharts](https://recharts.org/en-US/)
+-   [axios](https://axios-http.com/)
+-   [prop-types](https://github.com/facebook/prop-types)
+-   Recommended text editor: [Visual Studio Code](https://code.visualstudio.com/)
+  
+# Installation
+## backend
+This project uses a backend API and data.
+See : https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
+1- Clone this repository : 
+		<code>git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard</code>
+		
+2- Go into the directory :
+		<code>cd <YOUR_PATH>/backend</code>
+		
+3- Install the app :
+      <code>npm install</code> or <code>yarn</code>
+      
+4- Start the backend API :
+<code>npm start</code>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5- You can check that the backend API is working correctly :
+ It should start on your localhost on port 3000.
+ So if you place a request in your browser with this url :<code>http://localhost:3000/user/12</code>, it should display some datas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Frontend (and main app)
+Well ! This is the part why we are here !
 
-### `npm run eject`
+1- Clone this repository : 
+		<code>git clone https://github.com/pyleglise/sportsee</code>
+		
+2- Go into the directory :
+		<code>cd <YOUR_PATH>/sportsee</code>
+		
+3- Install the app :
+      <code>npm install</code> or <code>yarn</code>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ok, at this point, we're able to see some work done !
+ Type <code>npm run start</code> 
+ 
+ As the backend is already running on port 3000, it should display this message :
+ <code>? Something is already running on port 3000.\
+Would you like to run the app on another port instead? » (Y/n)</code>
+Just type Y and it will start on another port.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After few seconds, it should display something like this (the port number may be different) :
+<code>You can now view sportsee in the browser.\
+  Local:            http://localhost:3001
+  On Your Network:  http://192.168.154.1:3001</code>
+  Now, in your browser, go to url :  http://localhost:3001
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application Sportsee should be open.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Let's tweak !
 
-## Learn More
+The project has it's own mocked API embeded.
+That means that it can also be used without a fully fonctionnal backend.
+Let's see that !
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In the sportsee directory, open the file package.json.
+1- Replace this line :
+<code>"start": "react-scripts start",</code>
+by this line :
+<code>"start": "cross-env PORT=8082 react-scripts start",</code>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2- Add this line in the same category (scripts) :
+<code>"start-mock": "cross-env REACT_APP_ENVIRONMENT='developement' PORT=8081 react-scripts start",</code>
 
-### Code Splitting
+Ok, now we should have something like this :
+<code>"scripts": {\
+"start-mock": "cross-env REACT_APP_ENVIRONMENT='developement' PORT=8081 react-scripts start",\
+"start": "cross-env PORT=8082 react-scripts start",</code>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Good !
+Let's play with this !
 
-### Analyzing the Bundle Size
+You can start both instances of the application. One with the real datas and the real backend, on port 8082 and another one with the mocked API and le mocked data, on the port 8081 :
+<code>npm run start\
+npm run start-mock</code>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Then you can open 2 browser sessions, on http://localhost:8081 and http://localhost:8082
 
-### Making a Progressive Web App
+Check the comments, in the browser console. You should see the differences between the two versions :
+<code>====  MOCK environnement : using mocked API with Mirage and mocked datas  ==== </code>
+or <code>====  API environnement : using backend API and datas  ====</code>
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Useful links
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   [Live demo 🌍](https://pyleglise.github.io/sportsee/)
+-   [Repository 📖](https://github.com/pyleglise/sportsee)
+-   [Documentation 📑](https://pyleglise.github.io/jsdoc-p12/)
+-   [Figma mock-up 🖼️](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=1%3A2)

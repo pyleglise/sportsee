@@ -1,7 +1,21 @@
 import '../../utils/style/_error.scss'
 import { NavLink } from 'react-router-dom'
 
-export default function Untraceable() {
+/**
+ * Component that displays the 404 Not Found Error\
+ * No props
+ *
+ * @namespace
+ * @component
+ * @author  Pierre-Yves Léglise <pleglise@pm.me>
+ * @example
+ * return (
+ *   <Error />
+ * )
+ * @returns {JSX.Element}   A JSX.Element that contains the 404 error.
+ */
+
+const Error = () => {
   return (
     <div className="error">
       <p className="error-num">404</p>
@@ -15,3 +29,4 @@ export default function Untraceable() {
     </div>
   )
 }
+export default Error
