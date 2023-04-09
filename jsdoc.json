@@ -16,7 +16,7 @@
   },
 
   "opts": {
-    "destination": "docs",
+    "destination": "documentation",
     "search": true,
     "recurse": true,
     "verbose": true,
