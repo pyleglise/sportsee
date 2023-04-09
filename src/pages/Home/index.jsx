@@ -1,4 +1,19 @@
 import { useLocation } from 'react-router-dom'
+
+/**
+ * Component that displays the Home page\
+ * No props
+ *
+ * @namespace
+ * @component
+ * @author  Pierre-Yves Léglise <pleglise@pm.me>
+ * @example
+ * return{
+ *  <Home />
+ * }
+ * @returns {JSX.Element}   A JSX.Element that displays the Home Page
+ *
+ */
 const Home = () => {
   let location = useLocation()
   let pageName = 'Accueil'

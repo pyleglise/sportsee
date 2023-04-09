@@ -1,4 +1,5 @@
 import '../../utils/style/_goal.scss'
+import PropTypes from 'prop-types'
 import {
   RadialBarChart,
   RadialBar,
@@ -8,11 +9,38 @@ import {
 } from 'recharts'
 import Loader from '../loader'
 
-const Goal = ({ scoreGoal, isloading }) => {
-  const formatData = [{ scoreGoal }]
+/**
+ * Component that isplays a chart showing the goal.
+ * @namespace
+ * @component
+ * @author  Pierre-Yves Léglise <pleglise@pm.me>
+ * @see {@link https://recharts.org/en-US/api/RadialBarChart} for further information on `RadialBarChart` element from recharts api
+ * @example
+ * const score = 30
+ * const userInfo={isLoading: false}
+ * return (
+ *  <Goal score={score} isLoading={userInfo.isLoading} />
+ * )
+ * @prop {boolean}    isLoading         False if all the data have been fetched
+ * @prop {number}     score             Score of the goal to display
+ * @returns {JSX.Element}               A JSX element containing a `RadialBarChart` element from the `recharts` library.
+ */
+const Goal = ({ score, isloading }) => {
+  const formatData = [{ score }]
 
+  /**
+   * Displays a custom legend for a chart.
+   *
+   * @component
+   * @author  Pierre-Yves Léglise <pleglise@pm.me>
+   * @example
+   * return{
+   *  <LegendGoal />
+   * }
+   * @returns {JSX.Element} A JSX element representing the custom legend.
+   */
   const LegendGoal = () => {
-    const userScore = formatData[0].scoreGoal
+    const userScore = formatData[0].score
     return (
       <div className="score-container">
         <span className="score">{userScore ? userScore * 100 : 0}%</span>
@@ -61,3 +89,7 @@ const Goal = ({ scoreGoal, isloading }) => {
 }
 
 export default Goal
+Goal.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+  score: PropTypes.number.isRequired,
+}

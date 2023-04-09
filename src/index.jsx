@@ -1,10 +1,21 @@
+/**
+ * @file
+ * File : index.jsx\
+ * Entry point of the app\
+ *  Contains the router (react-router)\
+ *  Depending on react app environment variable, starts the mocked API (and get the mocked data)\
+ *  or call the real backend API (and get the real data)
+ * @author  Pierre-Yves Léglise <pleglise@pm.me>
+ * @module MainApp
+ */
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 import './utils/style/_global.scss'
 import Header from './components/header'
 import Home from './pages/Home'
-import Error from './pages/Error'
+import Error from './components/error'
 import User from './pages/User'
 import createFakeApi from './_mock_/mockedServer'
 import { userId } from './utils/data/config' // ============== Remove for real user
@@ -24,6 +35,7 @@ console.log('    ====  User Id randomly chosen : ' + userId + ' ====') // ======
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
+    {/* <Router basename="/oc/p12/build/"> */}
     <Router>
       <Header />
       <Routes>
