@@ -4,7 +4,6 @@
 ## OpenClassrooms Project 12
 
 | Project | 12                                                   |
-|---------|------------------------------------------------------|
 | Name    | Développez un tableau de bord d'analytics avec React |
 | Student | Pierre-Yves Léglise                                  |
 | Version | 1.0.0                                                |
