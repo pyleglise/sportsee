@@ -17,8 +17,6 @@
 
 SportSee is a website application that intend to give you access to various information regarding your health condition and sport activity.
 
-SportSee is a website application that intend to give you access to various information regarding your health condition and sport activity.
-
 It has been developped using React and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Therefore, it has some prerequisites.
@@ -46,18 +44,6 @@ Therefore, it has some prerequisites.
 
 - Recommended text editor: [Visual Studio Code](https://code.visualstudio.com/)
 
-- [React](https://reactjs.org/)
-
-- [react-router-dom](https://reactrouter.com/web/guides/quick-start)
-
-- [recharts](https://recharts.org/en-US/)
-
-- [axios](https://axios-http.com/)
-
-- [prop-types](https://github.com/facebook/prop-types)
-
-- Recommended text editor: [Visual Studio Code](https://code.visualstudio.com/)
-
 # Installation
 
 ## backend
@@ -70,13 +56,7 @@ See : https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
 
 <code>git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard</code>
 
-1- Clone this repository :
-
-<code>git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard</code>
-
 2- Go into the directory :
-
-<code>cd <YOUR\*PATH>/backend</code>
 
 <code>cd <YOUR\*PATH>/backend</code>
 
@@ -84,19 +64,11 @@ See : https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
 
 <code>npm install</code> or <code>yarn</code>
 
-<code>npm install</code> or <code>yarn</code>
-
 4- Start the backend API :
 
 <code>npm run start</code>
 
-<code>npm run start</code>
-
 5- You can check that the backend API is working correctly :
-
-It should start on your localhost on port 3000.
-
-So if you place a request in your browser with this url :<code>http://localhost:3000/user/12</code>, it should display some datas.
 
 It should start on your localhost on port 3000.
 
@@ -110,13 +82,7 @@ Well ! This is the part why we are here !
 
 <code>git clone https://github.com/pyleglise/sportsee</code>
 
-1- Clone this repository :
-
-<code>git clone https://github.com/pyleglise/sportsee</code>
-
 2- Go into the directory :
-
-<code>cd <YOUR_PATH>/sportsee</code>
 
 <code>cd <YOUR_PATH>/sportsee</code>
 
@@ -124,15 +90,7 @@ Well ! This is the part why we are here !
 
 <code>npm install</code> or <code>yarn</code>
 
-<code>npm install</code> or <code>yarn</code>
-
 Ok, at this point, we're able to see some work done !
-
-Type <code>npm run start</code>
-
-As the backend is already running on port 3000, it should display this message :
-
-<code>? Something is already running on port 3000.
 
 Type <code>npm run start</code>
 
@@ -145,14 +103,6 @@ Would you like to run the app on another port instead? » (Y/n)</code>
 Just type Y and it will start on another port.
 
 After few seconds, it should display something like this (the port number may be different) :
-
-<code>You can now view sportsee in the browser.
-
-Local: http://localhost:3001
-
-On Your Network: http://192.168.154.1:3001</code>
-
-Now, in your browser, go to url : http://localhost:3001
 
 <code>You can now view sportsee in the browser.
 
@@ -209,19 +159,8 @@ Check the comments, in the browser console. You should see the differences betwe
 
 or <code>==== API environnement : using backend API and datas ====</code>
 
-<code>==== MOCK environnement : using mocked API with Mirage and mocked datas ==== </code>
-
-or <code>==== API environnement : using backend API and datas ====</code>
-
 # Useful links
 
-- [Live demo 🌍](https://pyleglise.github.io/sportsee/)
-
-- [Repository 📖](https://github.com/pyleglise/sportsee)
-
-- [Documentation 📑](https://pyleglise.github.io/jsdoc-p12/)
-
-- [Figma mock-up 🖼️](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=1%3A2)
 - [Live demo 🌍](https://pyleglise.github.io/sportsee/)
 
 - [Repository 📖](https://github.com/pyleglise/sportsee)
