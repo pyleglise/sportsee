@@ -161,10 +161,8 @@ or <code>==== API environnement : using backend API and datas ====</code>
 
 # Useful links
 
-- [Live demo 🌍](https://pyleglise.github.io/sportsee/)
-
 - [Repository 📖](https://github.com/pyleglise/sportsee)
 
-- [Documentation 📑](https://pyleglise.github.io/jsdoc-p12/)
+- [Documentation 📑](https://pyleglise.github.io/sportsee/)
 
 - [Figma mock-up 🖼️](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=1%3A2)
