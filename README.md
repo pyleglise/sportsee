@@ -15,7 +15,7 @@
 
 # Introduction
 
-SportSee is a website application that intend to give you access to various information regarding your health condition and sport activity.
+SportSee is a website application that intend to give you access to various informations regarding your health condition and sport activity.
 
 It has been developped using React and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -23,9 +23,6 @@ Therefore, it has some prerequisites.
 
 # Prerequisites
 
-- NodeJS version 12.18
-
-- Yarn version 1.22.19 or npm version 8.15.0
 - NodeJS version 12.18
 
 - Yarn version 1.22.19 or npm version 8.15.0
@@ -46,11 +43,11 @@ Therefore, it has some prerequisites.
 
 # Installation
 
-## backend
+## Backend
 
 This project uses a backend API and data.
 
-See : https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
+See : [https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
 
 1- Clone this repository :
 
@@ -80,7 +77,7 @@ Well ! This is the part why we are here !
 
 1- Clone this repository :
 
-<code>git clone https://github.com/pyleglise/sportsee</code>
+<code>git clone [https://github.com/pyleglise/sportsee](https://github.com/pyleglise/sportsee)</code>
 
 2- Go into the directory :
 
@@ -96,21 +93,18 @@ Type <code>npm run start</code>
 
 As the backend is already running on port 3000, it should display this message :
 
-<code>? Something is already running on port 3000.
-
+<code>? Something is already running on port 3000.\
 Would you like to run the app on another port instead? » (Y/n)</code>
 
 Just type Y and it will start on another port.
 
 After few seconds, it should display something like this (the port number may be different) :
 
-<code>You can now view sportsee in the browser.
-
-Local: http://localhost:3001
-
+<code>You can now view sportsee in the browser.\
+Local: http://localhost:3001 \
 On Your Network: http://192.168.154.1:3001</code>
 
-Now, in your browser, go to url : http://localhost:3001
+Now, in your browser, go to url (correct the port number if needed): [http://localhost:3001](http://localhost:3001)
 
 The application Sportsee should be open.
 
@@ -151,7 +145,7 @@ You can start both instances of the application. One with the real datas and the
 <code>npm run start\
 npm run start-mock</code>
 
-Then you can open 2 browser sessions, on http://localhost:8081 and http://localhost:8082
+Then you can open 2 browser sessions, on [http://localhost:8081](http://localhost:8081) and [http://localhost:8082](http://localhost:8082)
 
 Check the comments, in the browser console. You should see the differences between the two versions :
 

@@ -35,6 +35,7 @@ console.log('    ====  User Id randomly chosen : ' + userId + ' ====') // ======
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
+    {/* <Router basename="/oc/p12/build/"> */}
     <Router>
       <Header />
       <Routes>

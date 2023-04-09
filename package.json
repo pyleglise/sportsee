@@ -2,6 +2,7 @@
   "name": "sportsee",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://www.axialdata.net/oc/p12/build/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -28,7 +29,7 @@
     "start": "cross-env PORT=8082 react-scripts start",
     "start-orig": "react-scripts start",
     "build": "react-scripts build",
-    "build-mock": "cross-env BUILD_PATH='./docs' REACT_APP_ENVIRONMENT='developement' react-scripts build",
+    "build-mock": "cross-env REACT_APP_ENVIRONMENT='developement' react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
