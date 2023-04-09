@@ -32,13 +32,8 @@
       "includeFilesListInHomepage": true,
       "menu": [
         {
-          "title": "Live demo",
-          "link": "https://",
-          "target": "_blank"
-        },
-        {
           "title": "Source",
-          "link": "https://",
+          "link": "https://github.com/pyleglise/sportsee",
           "target": "_blank"
         }
       ]
