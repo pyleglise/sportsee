@@ -155,8 +155,10 @@ or <code>==== API environnement : using backend API and datas ====</code>
 
 # Useful links
 
-- [Repository 📖](https://github.com/pyleglise/sportsee)
+- [Live Demo](https://www.axialdata.net/oc/p12/build/)
 
-- [Documentation 📑](https://pyleglise.github.io/sportsee/)
+- [Repository](https://github.com/pyleglise/sportsee)
 
-- [Figma mock-up 🖼️](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=1%3A2)
+- [Documentation](https://www.axialdata.net/oc/p12/docs/)
+
+- [Figma mock-up](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=1%3A2)
