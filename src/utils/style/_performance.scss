@@ -1,13 +1,12 @@
 @import 'colors';
-@import 'breakpoints';
 
 .perf-container {
   position: relative;
   background-color: $black-lighter;
   border-radius: 5px;
   aspect-ratio: 1/1;
-  height: 263px;
-  width: 258px;
+  height: 80%;
+  // width: 258px;
   padding: 0;
   margin: 0;
   font-weight: 500;
