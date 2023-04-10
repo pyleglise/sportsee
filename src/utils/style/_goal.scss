@@ -4,8 +4,8 @@
   background: $light-grey;
   border-radius: 5px;
   aspect-ratio: 1/1;
-  height: 263px;
-  width: 258px;
+  height: 80%;
+  // width: 90%;
   > h3 {
     padding: 0;
     margin: 24px 0 0 30px;
@@ -16,6 +16,8 @@
   .recharts-responsive-container {
     position: absolute;
     top: 15px;
+    // aspect-ratio: 1/1;
+    // height: 90%;
     margin: 0;
     padding: 0;
   }
@@ -31,13 +33,14 @@
         // top: 50% !important;
         // left: 50% !important;
         // transform: translate(-50%, -50%);
-        margin: 0px auto;
+        margin: 20px auto;
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        height: 100%;
-        width: 100%;
+        aspect-ratio: 1/1;
+        height: 80%;
+        // width: 100%;
         background: $white;
         border-radius: 100px;
         span.score {
@@ -47,12 +50,17 @@
         div {
           display: flex;
           justify-content: center;
+          // aspect-ratio: 1/1;
+          // height: 90%;
+
           > .description {
             font-size: 16px;
             font-weight: bolder;
             text-align: center;
             color: rgba(116, 121, 140, 1);
             margin: 0;
+            // aspect-ratio: 1/1;
+            // height: 100%;
             padding-left: 10%;
             padding-right: 10%;
             line-height: 26px;

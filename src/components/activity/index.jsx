@@ -22,7 +22,7 @@ import {
  * @example
  * const dataActivity = {isLoading: false, data[{day:1, kilogram: 80, calories:240},...]}
  * return (
- *  <Activity userActivity={dataActivity} />
+ *  <Activity dataActivity={userActivity} />
  * )
  * @prop {Object}     dataActivity                   The props passed to the component.
  * @prop {boolean}    dataActivity.isLoading         False if all the data have been fetched

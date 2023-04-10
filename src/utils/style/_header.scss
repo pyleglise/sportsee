@@ -1,9 +1,12 @@
+@import 'colors';
+
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #020203;
+  background-color: $background-nav;
   height: 80px;
+  // width: 100%;
 }
 
 .headerLogo {

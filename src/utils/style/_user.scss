@@ -1,32 +1,18 @@
 @import 'colors';
-@import 'breakpoints';
+
 .main {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
-// .dashboard {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   padding: 2%;
-//   width: calc(100% - 80px);
-//   height: 100%;
-//   box-sizing: border-box;
-// }
-
-// _______________________________
 .content {
-  // height: 100%;
-
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-top: 20px;
-  margin-left: 100px;
+  margin-top: 1%;
+  margin-left: 3%;
 }
 .content-profile {
   font-size: 32px;
@@ -38,10 +24,7 @@
   grid-template-areas:
     '.'
     '.';
-  gap: 20px 0;
-  @include laptop {
-    margin-bottom: 50px;
-  }
+  gap: 1% 0;
 }
 
 .oups {
@@ -58,11 +41,9 @@
 .welcome {
   display: flex;
   flex-direction: column;
+  margin: 0;
   // gap: 5px;
   // margin-bottom: 5px;
-  @include laptop {
-    // margin-bottom: -80px;
-  }
 
   > h1 {
     margin: 0 0;
@@ -83,23 +64,12 @@
   grid-template-rows: fit-content(0%);
   gap: 0 2%;
   grid-template-areas: '. .';
-  @include laptop {
-    grid-template-columns: 1fr;
-    grid-template-rows: 17% 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      '.'
-      '.';
-  }
-  @include largeScreens {
-    grid-template-columns: 72% 22%;
-  }
 }
 .charts {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 320px 263px;
-  gap: 20px 0;
+  // grid-template-rows: 320px 263px;
+  gap: 1% 0;
   grid-template-areas:
     '.'
     '.';
@@ -110,15 +80,13 @@
 .secondary-charts-container {
   display: flex;
   justify-content: space-between;
+
   margin: 10px 0;
   height: 263px;
-
-  @include desktop {
-    margin-top: 34px;
-  }
+  max-height: 253px;
 }
 .key-infos-zone {
-  height: 612px;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -133,15 +101,10 @@
     display: flex;
     align-items: center;
     padding: 0 0 0 32px;
-    gap: 24px;
+    gap: 1px;
     background-color: $light-grey;
     width: 100%;
     border-radius: 5px;
-
-    // padding: 15px 20px;
-    @include largeScreens {
-      min-height: 124px;
-    }
   }
   &__value {
     display: flex;
@@ -168,6 +131,7 @@
   margin: auto;
   .activity-container {
     width: 75%;
+    height: 280px;
   }
   .sessions-container,
   .perf-container {

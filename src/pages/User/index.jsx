@@ -19,6 +19,7 @@ import ActivityData from '../../utils/data/models/ActivityData'
 import AvgSessionsData from '../../utils/data/models/AverageSessionsData'
 import UserInfoData from '../../utils/data/models/UserInfoData'
 import PropTypes from 'prop-types'
+
 /**
  * Component that displays the user's dashboard and datas
  *
@@ -34,6 +35,7 @@ import PropTypes from 'prop-types'
  */
 const User = (props) => {
   const pageName = props.pageName
+
   const { id } = useParams()
   const userInfoRaw = useGet(baseUrl + id)
   const userActivityRaw = useGet(baseUrl + id + '/activity')

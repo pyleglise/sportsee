@@ -1,13 +1,12 @@
 @import 'colors';
-@import 'breakpoints';
 
 .sessions-container {
   position: relative;
   background-color: red;
   border-radius: 5px;
   aspect-ratio: 1/1;
-  height: 263px;
-  width: 258px;
+  height: 80%;
+  // width: 258px;
 }
 .week-end {
   position: relative;
@@ -25,8 +24,8 @@
 
 .special-legend--sessions {
   position: absolute;
-  top: 10px;
-  left: 5px;
+  top: 7%;
+  left: 3%;
   width: 70%;
   color: white;
   opacity: 0.4;

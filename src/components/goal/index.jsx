@@ -70,7 +70,7 @@ const Goal = ({ score, isloading }) => {
           <PolarAngleAxis type="number" domain={[0, 1]} tick={false} />
           <RadialBar
             minAngle={15}
-            dataKey="scoreGoal"
+            dataKey="score"
             fill="red"
             cornerRadius={20}
           />
