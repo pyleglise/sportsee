@@ -20,12 +20,12 @@
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 120px auto;
-  grid-template-areas:
-    '.'
-    '.';
-  gap: 1% 0;
+  // grid-template-columns: 100%;
+  // grid-template-rows: 120px auto;
+  // grid-template-areas:
+  //   '.'
+  //   '.';
+  gap: 0 0;
 }
 
 .oups {
@@ -52,6 +52,7 @@
   }
   > p {
     font-size: 18px;
+    margin: 1% 0;
   }
 }
 .dashboard {
@@ -66,8 +67,8 @@
 .charts {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 50% 45%;
-  gap: 3% 0;
+  grid-template-rows: 49% 45%;
+  gap: 2% 0;
   grid-template-areas:
     '.'
     '.';
