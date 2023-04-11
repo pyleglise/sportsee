@@ -8,6 +8,7 @@
 
 .content {
   width: 90%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,9 +43,6 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  // gap: 5px;
-  // margin-bottom: 5px;
-
   > h1 {
     margin: 0 0;
     font-size: 48px;
@@ -68,57 +66,57 @@
 .charts {
   display: grid;
   grid-template-columns: 100%;
-  // grid-template-rows: 320px 263px;
-  gap: 1% 0;
+  grid-template-rows: 50% 45%;
+  gap: 3% 0;
   grid-template-areas:
     '.'
     '.';
-  width: 100%;
-  height: fit-content;
   align-content: top;
 }
 .secondary-charts-container {
   display: flex;
   justify-content: space-between;
 
-  margin: 10px 0;
-  height: 263px;
-  max-height: 253px;
+  margin: 0;
+  // min-height: 80px;
 }
 .key-infos-zone {
-  height: 90%;
+  height: 98%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // gap: 3.5%;
 }
 
 .key-info {
-  display: flex;
-  flex-direction: column;
-
   &__container {
     display: flex;
     align-items: center;
-    padding: 0 0 0 32px;
-    gap: 1px;
     background-color: $light-grey;
     width: 100%;
+    height: 18%;
     border-radius: 5px;
+  }
+  &__icon {
+    margin: 15% 9%;
   }
   &__value {
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
+    align-content: center;
+
     > h5 {
+      height: 50%;
       font-size: 20px;
       font-weight: bolder;
-      margin: 30px 0 0 0;
+      margin: auto 0 0 0;
     }
     > p {
+      height: 50%;
       font-size: 14px;
       font-weight: bolder;
       color: $font-grey;
-      margin: 10px 0 30px 0;
+      margin: 0 0 auto 0;
     }
   }
 }

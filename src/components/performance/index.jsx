@@ -52,7 +52,7 @@ const Perfomance = ({ perfData }) => {
         <Loader />
       ) : (
         <div className="perf-container">
-          <ResponsiveContainer width="100%" height="100%">
+          <ResponsiveContainer>
             <RadarChart
               // data={formatData().reverse()}
               data={perfData.data}
