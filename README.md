@@ -7,8 +7,8 @@
 | Project      | 12                                                   |
 | Name         | Développez un tableau de bord d'analytics avec React |
 | Student      | Pierre-Yves Léglise                                  |
-| Version      | 1.0.0                                                |
-| Release date | 2023/04/10                                           |
+| Version      | 1.0.3                                                |
+| Release date | 2023/04/11                                           |
 |              |                                                      |
 
 ![Aperçu](https://www.axialdata.net/oc/p12-snapshot.jpg)
