@@ -21,7 +21,7 @@ const Home = () => {
     pageName = location.state.pageName
   }
   return (
-    <div className="temp-div">
+    <div className="temp-div home-div">
       Page {pageName}
       <br />
       En cours de développement

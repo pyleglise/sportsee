@@ -4,12 +4,10 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  // color: $primary-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 1024px;
   min-height: 780px;
-  // max-width: 1440px;
 }
 
 .temp-div {
@@ -19,5 +17,8 @@ body {
   vertical-align: center;
   width: 100%;
   height: 100%;
-  margin: 20% auto;
+  margin: auto auto;
+}
+.home-div {
+  margin-top: 18%;
 }

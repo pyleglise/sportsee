@@ -74,7 +74,7 @@ const AverageSession = ({ sessionData }) => {
     <div className="sessions-container">
       <div className="bg-we"></div>
       <div className="week-end">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer>
           <LineChart
             width="100%"
             height="100%"

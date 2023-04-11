@@ -82,6 +82,7 @@ const Goal = ({ score, isloading }) => {
             align="center"
             content={<LegendGoal />}
           />
+          <circle cx="50%" cy="50%" fill="white" r="33%"></circle>
         </RadialBarChart>
       </ResponsiveContainer>
     </div>
