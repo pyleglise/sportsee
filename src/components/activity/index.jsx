@@ -1,5 +1,5 @@
 import '../../utils/style/_activity.scss'
-import Loader from '../../components/loader'
+import Loader from '../loader'
 import PropTypes from 'prop-types'
 
 import {
@@ -15,6 +15,7 @@ import {
 
 /**
  * Component that displays a chart showing daily activity.
+ *
  * @namespace
  * @component
  * @author  Pierre-Yves Léglise <pleglise@pm.me>

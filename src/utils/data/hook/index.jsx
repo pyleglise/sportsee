@@ -5,8 +5,7 @@ import PropTypes from 'prop-types'
 /**
  *
  * @file Component hook `useGet` that uses axios to fetch the data from the API backend or mocked
- * @namespace Hooks
- * @component
+ * @function useGet
  * @author  Pierre-Yves Léglise <pleglise@pm.me>
  * @example const userInfo = useGet(url)
  * @prop    {string}  url      URL of the API call
@@ -47,4 +46,5 @@ useGet.propTypes = {
 useGet.defaultProps = {
   url: 'http://localhost:3000',
 }
+
 export default useGet

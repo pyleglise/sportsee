@@ -7,6 +7,7 @@ import { frenchCategories } from '../config'
  * @example
  * const userPerf = new PerformanceData(data)
  */
+
 class PerformanceData {
   /**
    * Creates the user's performances data.

@@ -25,6 +25,7 @@
   },
   "scripts": {
     "docs": "jsdoc -c jsdoc.json",
+    "jsdoc": "rd /s /q docs .cache>nul 2>&1|echo.>nul && jsdoc -c jsdoc.json && node custom-docs.js",
     "start-mock": "cross-env REACT_APP_ENVIRONMENT='developement' PORT=8081 react-scripts start",
     "start": "cross-env PORT=8082 react-scripts start",
     "start-orig": "react-scripts start",
@@ -39,6 +40,11 @@
       "react-app/jest"
     ]
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -52,8 +58,8 @@
     ]
   },
   "devDependencies": {
-    "jsdoc": "^4.0.2",
     "clean-jsdoc-theme": "^4.2.7",
+    "jsdoc": "^4.0.2",
     "miragejs": "^0.1.47",
     "prettier": "2.8.6"
   }

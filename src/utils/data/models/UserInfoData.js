@@ -24,6 +24,7 @@ class UserInfoData {
    * @param   {!Number}   data.score                          The user's score
    * @param   {!Number}   data.todayScore                     The user's score
    */
+
   constructor(data) {
     this.isLoading = false
     this.id = data.id

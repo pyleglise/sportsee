@@ -160,4 +160,5 @@ User.propTypes = {
 User.defaultProps = {
   pageName: 'Dashboard',
 }
+
 export default User

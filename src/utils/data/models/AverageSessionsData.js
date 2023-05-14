@@ -26,5 +26,4 @@ class AvgSessionsData {
     })
   }
 }
-
 export default AvgSessionsData

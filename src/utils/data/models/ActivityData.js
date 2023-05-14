@@ -26,5 +26,4 @@ class ActivityData {
     })
   }
 }
-
 export default ActivityData

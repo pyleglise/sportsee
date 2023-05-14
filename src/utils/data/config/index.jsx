@@ -23,5 +23,6 @@ const frenchCategories = [
   'Vitesse',
   'Intensité',
 ]
+
 export { server, page, userId, frenchCategories, days }
 export default baseUrl
